@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  ipmi-dev:
+    image: ipmi-dev:latest
+    container_name: ipmi-dev  
+    volumes:
+      - ./workspace:/workspace
+    restart: always
+networks:
+  default:
+    name: backend-network
+    external: true

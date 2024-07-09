@@ -1,0 +1,2 @@
+python-ipmi==0.5.4
+paho-mqtt==1.6.1
