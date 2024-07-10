@@ -8,7 +8,7 @@ To use this Python tool, you need:
 - A MQTT broker
 
 ## IPMI/BNC:
-Before you can run the Python IPMI monitoring, ensure that the Intelligent Platform Management Interface (IPMI) is accessible. On an Nvidia DGX A100 server, IPMI is implemented and provided by BMC, which should be connected to your network infrastructure via LAN. Use the tool ``ipmitool`` to test the connection to IPMI: ``ipmitool -C 17 -I lanplus -H <bmc_ip_addr> -U ADMIN -P ADMIN <ipmitool_arguments>``. The credentials for accessing IPMI are commonly the credentials for the BMC login.
+Before you can run the Python IPMI monitoring, ensure that the Intelligent Platform Management Interface (IPMI) is accessible. On an Nvidia DGX A100 server, IPMI is implemented and provided by BMC, which should be connected to your network infrastructure via LAN. Use the tool ``ipmitool`` to test the connection to IPMI: ``ipmitool -C 17 -I lanplus -H <bmc_ip_addr> -U ADMIN -P ADMIN <ipmitool_arguments>``. The credentials for accessing IPMI are those for the BMC login.
 
 ## Deployment:
 Download the content of this repository and modify the configuration properties in ``config.ini`` as follows:
