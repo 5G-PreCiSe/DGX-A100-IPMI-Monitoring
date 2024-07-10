@@ -14,6 +14,6 @@ Before you can run the Python IPMI monitoring, ensure that the Intelligent Platf
 Download the content of this repository and modify the configuration properties in ``config.ini`` as follows:
 - In section ``[ipmi]``, the property ``Host`` must contain the IP address of your BMC LAN interface. Moreover, replace ``USERNAME`` and ``PASSWORD`` with your credentials to access IPMI/BMC.
 - In section ``[broker]``, set the broker hostname or IP address (``Address``) and replace ``MQTT_USER`` and ``MQTT_PASSWORD`` with an MQTT user having write permission to the specified topics.
-- Run the docker-compose file
+Finally, run the docker-compose file.
 
 
